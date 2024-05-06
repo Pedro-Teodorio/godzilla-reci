@@ -1,0 +1,310 @@
+$enable-grid-classes: false;
+$enable-cssgrid: true;
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+:root {
+	--primary-color: #154002;
+	--secondary-color: #f29f05;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.navbar .container-fluid{
+	gap: 0 2rem !important;
+    align-items: center;
+	
+}
+.navbar-nav {
+	gap: 0 3rem;
+}
+.nav-item a{
+	color: #154002 !important;
+	font-weight: 650;
+}
+
+.nav-item a:hover {
+    color: #f29f05 !important;
+}
+.nav-link.active {
+	color: #f29f05 !important;
+}
+#nav-icon {
+	color: var(--secondary-color);
+	cursor: pointer;
+    font-size: 40px;
+}
+#home{
+    padding-top: 120px;
+}
+.first-carrousel{
+    width: 100%;
+	height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../imgs/carrousel_img_1.JPG") lightgray 50% / cover no-repeat;
+    background-size: cover;
+}
+.second-carrousel{
+    width: 100%;
+	height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../imgs/carrousel_img_2.jpg") lightgray 50% / cover no-repeat;
+    background-size: cover;
+}
+
+.card-recicle{
+    padding: 10px;
+}
+.card-recicle h3{
+    color: #FBF451;
+}
+.card-passo{
+    color: #FBF451;
+    padding: 10px;
+    border: 1px solid #FBF451;
+    border-radius: 20px;
+}
+.card-passo h3{
+    color: #FBF451;
+    text-decoration: underline
+}
+.card-carrousel-footer{
+    background-color: #f29f05
+}
+.card-descarte{
+    padding: 10px;
+    background-color: #f29f05;
+    border-radius: 20px;
+}
+.footer-home{
+    background: linear-gradient(0deg, rgba(21, 64, 2, 0.9) 0%, rgba(21, 64, 2, 0.9) 100%), url("../imgs/background_rodape_carrousel.jpg") lightgray 50% / cover no-repeat;
+}
+.footer-home p{
+    font-size: 12px ;
+}
+.title-section {
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px solid var(--secondary-color);
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 5px 2.6px;
+	line-height: 0.1em;
+	color: var(--secondary-color);
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	
+}
+.title-section span {
+	background: #fff;
+	padding: 0 10px;
+	text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+#tutorial,
+#sobre_nos,
+#ponto_entrega,
+#parceiros,
+#fale_conosco{
+    padding-top: 136px;
+}
+
+
+.subtitle{
+    color: #f29f05
+}
+.text-desc{
+    line-height: 2.1rem;
+}
+.tutorial-list ul{
+    list-style: none;
+}
+.tutorial-list ul li {
+    font-size: 14px;
+}
+.tutorial-list ul li span{
+    color: #f29f05;
+}
+.tutorial-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sobre-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-sobre-img{
+    background-color: #f29f05;
+    padding: 3rem;
+}
+.card-img-top{
+    width: 150px !important;
+    height: 150px !important;
+    object-fit: cover !important;
+}
+
+.destino_final{
+    padding-top: 120px;
+}
+.card-diferencial img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+.card-header{
+    background-color: #f29f05 !important;
+}
+.card-diferencial span{
+    font-size: 12px
+}
+.logo_espaco_gourmet{
+    width: 200px;
+    height: 84px;
+    object-fit: cover;
+}
+.logo_coldcenter{
+    width: 200px;
+    height: 181px;
+    object-fit: cover;
+}
+.text-ponto-entrega{
+    font-size: 14px;
+}
+.text-ponto-entrega h3{
+    color: #f29f05;
+}
+.text-ponto-entrega h4{
+    font-size: 16px;
+    color: #f29f05;
+}
+.text-ponto-entrega strong{
+    color: #f29f05
+}
+
+#svg-igrejas,
+#svg-condominio,
+#svg-mercados,
+#svg-projetos-sociais,
+#svg-estabelecimento-comercial {
+	display: none;
+}
+.active-arrow {
+	fill: var(--secondary-color);
+	transition: 0.5s ease-in-out;
+}
+.active-arrow-border {
+	fill: var(--primary-color);
+	transition: 0.5s ease-in-out;
+}
+
+.fade_in {
+	opacity: 0;
+	animation: fade-in 1s ease-in-out forwards;
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.footer-primary{
+
+    background-color: #f29f05;  
+}
+.footer-text{
+    font-size: 18px
+}
+.footer-second{
+    background-color: #f29f05;  
+}
+.tes{
+    margin-bottom: 11rem !important;
+}
+.input-icon{
+    background-color: transparent;
+    color: #5376A4;
+}
+.input-icon::after{
+    background-color: #f8f9fa!important;
+    color: #5376A4 !important;
+}
+ .input-icon i{
+    padding-right: 12px !important; 
+}
+
+.card-fale-conosco .grid{
+    gap: 0.5rem;
+}
+.text-area-fale-conosco{
+    height: 120px !important;
+}
+.btn-fale-conosco{
+    background-color: #f29f05 !important; 
+}
+
+.video-fale-conosco{
+    width: 100% !important;
+    height: 350px;
+}
+.video-fale-conosco video{
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-text{
+    width: 100%;
+    height: 350px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); 
+}
+.card-info-fale-conosco{
+    margin-top: -85px ;
+    padding-bottom: 5rem;
+    z-index: 20
+}
+.card-info-fale-conosco h3{
+    color: #f29f05;
+}
+.card-info-fale-conosco p{
+    font-size: 12px;
+}
+.card-info-fale-conosco-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-info-fale-conosco-img img{
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.footer-content{
+    font-size: 12px;
+}
+
+.footer-content  a{
+    text-decoration: none;
+    color: #fff
+}
+.whats-icon{
+    width: 80px;
+    height: 80px;
+    background-color: #25d366 ;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+.whats-icon i{
+    font-size: 40px; 
+}
+
+.envio_form{
+    color: #f29f05
+}
+@import "./bootstrap.scss";
